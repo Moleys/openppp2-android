@@ -46,9 +46,9 @@ public class MainActivity extends PppVpnActivity {
         vpn.key.kl = 10;
         vpn.key.kh = 12;
         vpn.key.protocol = "aes-128-cfb";
-        vpn.key.protocol_key = "N6HMzdUs7IUnYHwq";
+        vpn.key.protocol_key = "bo9mmQKFUVuljGFha2";
         vpn.key.transport = "aes-256-cfb";
-        vpn.key.transport_key = "HWFweXu2g5RVMEpy";
+        vpn.key.transport_key = "PzKJ7Zb4rYKvzbZMCo";
         vpn.key.masked = false;
         vpn.key.plaintext = false;
         vpn.key.delta_encode = false;
@@ -67,9 +67,9 @@ public class MainActivity extends PppVpnActivity {
         vpn.udp.static_.icmp = true;
         vpn.udp.static_.keep_alived[0] = 1;
         vpn.udp.static_.keep_alived[1] = 5;
-        vpn.udp.static_.servers.add("192.168.0.24:20000");
+        vpn.udp.static_.servers.add("123.254.105.129:2024");
 
-        vpn.websocket.verify_peer = true;
+        vpn.websocket.verify_peer = false;
         vpn.websocket.http.error = "Status Code: 404; Not Found";
         vpn.websocket.http.request.put("Cache-Control", "no-cache");
         vpn.websocket.http.request.put("Pragma", "no-cache");
@@ -81,7 +81,7 @@ public class MainActivity extends PppVpnActivity {
         vpn.websocket.http.response.put("Server", "Kestrel");
 
         vpn.client.guid = "{14261208-BB45-4DEB-B115-0FEA1D91B85B}";
-        vpn.client.server = "ppp://192.168.0.24:20000/";
+        vpn.client.server = "ppp://123.254.105.129:2024/";
         vpn.client.bandwidth = 0;
         vpn.client.reconnections.timeout = Macro.PPP_TCP_CONNECT_TIMEOUT;
         vpn.client.http_proxy.bind = "127.0.0.1";
